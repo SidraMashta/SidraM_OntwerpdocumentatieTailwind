@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mijn Treinen</title>
+<link rel="stylesheet" href="../dist/output.css">
+<style>
+:root{
+  --bg:#171B2A;
+  --card:#1F2435;
+  --muted:#D7D9E0;
+  --on-time:#7CFF8C;
+  --delayed:#FFB947;
+  --canceled:#FF4C4C;
+}
+</style>
+</head>
+<body class="bg-[color:var(--bg)] min-h-screen flex flex-col items-center justify-start p-4 font-sans text-white">
+<div class="w-full max-w-[390px] mb-4">
+    <a href="../index.html" class="inline-block bg-[color:var(--muted)] text-[color:var(--bg)] font-semibold px-4 py-2 rounded-lg hover:bg-white/80 transition">
+        ← Terug
+    </a>
+</div>
+
+<div class="w-full max-w-[390px] h-[820px] bg-[color:var(--card)] rounded-2xl shadow-xl overflow-hidden flex flex-col">
+    <header class="px-6 pt-6 pb-4 flex items-center justify-between">
+        <div>
+            <h1 class="text-3xl font-bold leading-none">
+                Mijn Treinen <span class="text-base font-medium">| 07:00</span>
+            </h1>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <button aria-label="filter" onclick="location.href='zoek-trein.html'" class="p-2 rounded hover:bg-white/5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 4h18M8 12h8M10 20h4"/>
+                </svg>
+            </button>
+
+            <button onclick="location.href='instellingen.html'" class="text-sm text-[color:var(--muted)] whitespace-nowrap">
+                NL | FR | DE
+            </button>
+
+            <button aria-label="user" onclick="location.href='registratie.html'" class="p-2 rounded-full hover:bg-white/5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" class="h-7 w-7">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zM4.8 20.4c0-4 3.2-7.2 7.2-7.2s7.2 3.2 7.2 7.2"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <main class="px-4 pb-4 overflow-y-auto flex-1 space-y-3">
+        <article class="bg-[color:var(--bg)]/30 rounded-lg p-3 flex items-start justify-between">
+            <div class="flex-1">
+                <div class="flex items-center justify-between">
+                    <div class="text-sm text-[color:var(--muted)]">07:17</div>
+                    <div class="text-sm font-semibold">TGV INOUI 9870</div>
+                </div>
+                <div class="mt-2 text-xs text-[color:var(--muted)]">Straatsburg / Strasbourg</div>
+            </div>
+
+            <div class="flex flex-col items-end gap-2 ml-3">
+                <div class="text-xs text-[color:var(--on-time)] flex items-center gap-1">
+                    Op Tijd
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <button onclick="location.href='trein-details.html'" class="text-xl leading-none p-1 hover:bg-white/5 rounded">›</button>
+            </div>
+        </article>
+        <article class="bg-[color:var(--bg)]/30 rounded-lg p-3 flex items-start justify-between">
+            <div class="flex-1">
+                <div class="flex items-center justify-between">
+                    <div class="text-sm text-[color:var(--muted)]">07:20</div>
+                    <div class="text-sm font-semibold">IC 1500</div>
+                </div>
+                <div class="mt-2 text-xs text-[color:var(--muted)]">Gent</div>
+            </div>
+
+            <div class="flex flex-col items-end gap-2 ml-3">
+                <div class="text-xs text-[color:var(--delayed)] flex items-center gap-1">
+                    Vertraagd
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 8v4l2 2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <button onclick="location.href='trein-details.html'" class="text-xl leading-none p-1 hover:bg-white/5 rounded">›</button>
+            </div>
+        </article>
+        <article class="bg-[color:var(--bg)]/30 rounded-lg p-3 flex items-start justify-between">
+            <div class="flex-1">
+                <div class="flex items-center justify-between">
+                    <div class="text-sm text-[color:var(--muted)]">07:30</div>
+                    <div class="text-sm font-semibold">IC 2419</div>
+                </div>
+                <div class="mt-2 text-xs text-[color:var(--muted)]">Namen</div>
+            </div>
+
+            <div class="flex flex-col items-end gap-2 ml-3">
+                <div class="text-xs text-[color:var(--on-time)] flex items-center gap-1">
+                    Op Tijd
+                    <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <button onclick="location.href='trein-details.html'" class="text-xl leading-none p-1 hover:bg-white/5 rounded">›</button>
+            </div>
+        </article>
+        <div class="mt-3 text-center text-[color:var(--muted)] text-sm flex items-center justify-center gap-2">
+            <button onclick="location.reload()" class="flex items-center gap-2">
+                <svg class="h-5 w-5" fill="none" stroke="currentColor">
+                    <path d="M4 4v6h6M20 20v-6h-6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Lijst opnieuw laden
+            </button>
+        </div>
+    </main>
+    <footer class="px-6 py-4 bg-[color:var(--card)]/40 border-t border-white/5">
+        <div class="flex flex-col gap-3">
+            <button onclick="location.href='wagonindeling.html'" class="w-full bg-white/10 text-white py-3 rounded-lg hover:bg-white/20 transition">
+                Details
+            </button>
+            <button class="w-full bg-white/5 text-white py-3 rounded-lg opacity-30 cursor-not-allowed">
+                Kaartje kopen
+            </button>
+        </div>
+        <footer class="text-center text-gray-500 py-6">
+  © 2025 — Sidra Mashta — PRT1 — 1GDM2
+ <p><a
+  href="https://github.com/SidraMashta/SidraM_OntwerpdocumentatieTailwind"
+  target="_blank"
+  class="text-center text-gray-500 py-6""
+>
+  Bekijk mijn GitHub repository
+</a>
+</p> 
+</footer>
+</div>
+</body>
+</html>

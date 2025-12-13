@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wagonindeling</title>
+  <link rel="stylesheet" href="../dist/output.css">
+  <style>
+    :root{--bg:#171B2A; --card:#1F2435; --muted:#D7D9E0; --free:#7CFF8C; --busy:#FFB947; --full:#FF4C4C}
+  </style>
+</head>
+<body class="bg-[color:var(--bg)] min-h-screen flex items-center justify-center p-4 text-white">
+  <div class="w-full max-w-[390px] h-[820px] bg-[color:var(--card)] rounded-2xl shadow-xl overflow-auto">
+    <header class="px-6 pt-6 pb-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold">Wagonindeling IC1500</h1>
+        <button onclick="location.href='week8.html'" class="text-sm text-[color:var(--muted)]">Terug</button>
+      </div>
+    </header>
+
+    <main class="px-6 py-4 space-y-6">
+      <div class="grid grid-cols-3 gap-4">
+        <button class="bg-[color:var(--bg)]/20 rounded-lg p-4 text-center hover:scale-[1.02] transition">Wagon 1</button>
+        <button class="bg-[color:var(--bg)]/20 rounded-lg p-4 text-center hover:scale-[1.02] transition">Wagon 2</button>
+        <button class="bg-[color:var(--bg)]/20 rounded-lg p-4 text-center hover:scale-[1.02] transition">Wagon 3</button>
+        <button class="bg-[color:var(--bg)]/20 rounded-lg p-4 text-center hover:scale-[1.02] transition">Wagon 4</button>
+        <button class="bg-[color:var(--bg)]/20 rounded-lg p-4 text-center hover:scale-[1.02] transition">Wagon 5</button>
+        <button class="bg-[color:var(--bg)]/20 rounded-lg p-4 text-center hover:scale-[1.02] transition">Wagon 6</button>
+      </div>
+      <div class="space-y-3">
+        <div class="flex items-center gap-3">
+          <div class="h-8 w-8 rounded-full bg-[color:var(--free)] flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2v20" stroke="#000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="text-sm">Vrij (stiltecoupé)</div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="h-8 w-8 rounded-full bg-[color:var(--busy)] flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 16a3 3 0 106 0 3 3 0 00-6 0zM13 8h3l2 4" stroke="#000" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="text-sm">Druk (fietsen)</div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="h-8 w-8 rounded-full bg-[color:var(--full)] flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 3a2 2 0 100 4 2 2 0 000-4zM11 11v6h4" stroke="#000" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="text-sm">Vol (rolstoelzitplaatsen)</div>
+        </div>
+      </div>
+
+      <div class="mt-4 bg-[color:var(--bg)]/30 p-4 rounded-lg text-sm text-[color:var(--muted)]">
+        Beschikbare plaatsen: 52<br/>
+        Faciliteiten: WiFi, stopcontacten
+      </div>
+<footer class="text-center text-gray-500 py-6">
+      <p><button onclick="location.href='../index.html'" class="text-sm text-[color:var(--muted)]">Home</button></p>
+  © 2025 — Sidra Mashta — PRT1 — 1GDM2
+ <p><a
+  href="https://github.com/SidraMashta/SidraM_OntwerpdocumentatieTailwind"
+  target="_blank"
+  class="text-center text-gray-500 py-6""
+>
+  Bekijk mijn GitHub repository
+</a>
+</p> 
+</footer>
+    </main>
+  </div>
+</body>
+</html>

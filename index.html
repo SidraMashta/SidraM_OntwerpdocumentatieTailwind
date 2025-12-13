@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectdocumentatie | Lost in Tra(i)nslation</title>
+  <link rel="stylesheet" href="dist/output.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+    body {
+      background-color: #1f1d26;
+      color: #e5e5f0;
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    h1 { color: #fff; font-size: 2rem; margin-bottom: 0.5rem; }
+    nav ul { display: flex; justify-content: center; gap: 1rem; list-style: none; padding: 0; margin: 0; }
+    nav a { color: #bdbdd0; text-decoration: none; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #2da84a; }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      background-color: #25232b;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .weeks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .week-card {
+      background: rgba(255,255,255,0.02);
+      padding: 1rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    .week-card h3 { margin: 0 0 0.5rem 0; color: #fff; font-size: 1.05rem; }
+    .week-card a { color: #bdbdd0; text-decoration: none; font-weight: 600; }
+    .week-card a:hover { color: #2da84a; }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lost in Tra(i)nslation — Projectdocumentatie</h1>
+    <p>Mashta S. | Artesis Plantijn Hogeschool Antwerpen | Prototyping Tools</p>
+    <nav>
+      <ul>
+        <li><a href="public/week1.html">Week 1</a></li>
+        <li><a href="public/week2.html">Week 2</a></li>
+        <li><a href="public/week3.html">Week 3</a></li>
+        <li><a href="public/week4.html">Week 4</a></li>
+        <li><a href="public/week5.html">Week 5</a></li>
+        <li><a href="public/week6.html">Week 6</a></li>
+        <li><a href="public/week7.html">Week 7</a></li>
+        <li><a href="public/week8.html">Eindresultaat</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Over dit project</h2>
+    <p>
+      Dit project maakt deel uit van de cursus <strong>Prototyping Tools</strong>.
+      Tijdens dit traject werk ik aan een concept genaamd <strong>Lost in Tra(i)nslation</strong>,
+      waarin ik de complexiteit en taalbarrières van treincommunicatie in België visualiseer
+      via interactieve schermen: een vertrekbord, een perronscherm en een mobiele weergave.
+    </p>
+    <p>
+      De documentatie is nu opgedeeld in acht weken (Week 1 t/m Eindresultaat), waarin telkens de voortgang,
+      keuzes en inzichten worden beschreven.
+    </p>
+    <p><em>Klik bovenaan op een week om de evolutie te bekijken.</em></p>
+
+    <div class="weeks-grid" aria-hidden="false">
+      <div class="week-card">
+        <h3>Week 1 — Oriëntatie & Idee</h3>
+        <a href="week1.html">Bekijk Week 1</a>
+      </div>
+      <div class="week-card">
+        <h3>Week 2 — Low-fidelity Prototype</h3>
+        <a href="week2.html">Bekijk Week 2</a>
+      </div>
+      <div class="week-card">
+        <h3>Week 3 — Mid-fidelity Prototype</h3>
+        <a href="week3.html">Bekijk Week 3</a>
+      </div>
+      <div class="week-card">
+        <h3>Week 4 — Hi-fidelity Prototype</h3>
+        <a href="week4.html">Bekijk Week 4</a>
+      </div>
+      <div class="week-card">
+        <h3>Week 5 — HTML & CSS Implementatie</h3>
+        <a href="week5.html">Bekijk Week 5</a>
+      </div>
+      <div class="week-card">
+        <h3>Week 6 — Testfase & Verbeteringen</h3>
+        <a href="week6.html">Bekijk Week 6</a>
+      </div>
+      <div class="week-card">
+        <h3>Week 7 — Componenten & Details</h3>
+        <a href="week7.html">Bekijk Week 7</a>
+      </div>
+      <div class="week-card">
+        <h3>Eindresultaat</h3>
+        <a href="week8.html">Bekijk Eindresultaat</a>
+      </div>
+    </div>
+  </main>
+  <footer class="text-center text-gray-500 py-6">
+  © 2025 — Sidra Mashta — PRT1 — 1GDM2
+    <p>
+  <a
+    href="https://github.com/SidraMashta/SidraM_OntwerpdocumentatieTailwind"
+  >
+    Bekijk mijn GitHub repository
+  </a></p>
+  <a
+    href="assets/2526_PRRT_Ontwerpdocumentatie_SidraM.pdf"
+    download
+  >
+    Download ontwerpdocumentatie (PDF)
+  </a>
+</section>
+</footer>
+</body>
+</html>

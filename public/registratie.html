@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Account aanmaken</title>
+  <link rel="stylesheet" href="../dist/output.css">
+  <style>
+    :root{--bg:#171B2A; --card:#1F2435; --muted:#D7D9E0}
+  </style>
+</head>
+<body class="bg-[color:var(--bg)] min-h-screen flex items-center justify-center p-4 text-white">
+  <div class="w-full max-w-[390px] h-[820px] bg-[color:var(--card)] rounded-2xl shadow-xl overflow-auto">
+    <header class="px-6 pt-6 pb-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold">Account aanmaken</h1>
+        <button onclick="location.href='week8.html'" class="text-sm text-[color:var(--muted)]">Terug</button>
+      </div>
+      <p class="mt-2 text-sm text-[color:var(--muted)]">Vul je gegevens in om te starten.</p>
+    </header>
+
+    <main class="px-6 py-4 space-y-4">
+      <label class="block text-xs text-[color:var(--muted)]">Naam</label>
+      <input id="regName" class="w-full bg-[color:var(--bg)]/20 border border-white/5 rounded-lg p-3 placeholder:text-[color:var(--muted)]" placeholder="Naam" />
+
+      <label class="block text-xs text-[color:var(--muted)]">E-mail</label>
+      <input id="regEmail" class="w-full bg-[color:var(--bg)]/20 border border-white/5 rounded-lg p-3 placeholder:text-[color:var(--muted)]" placeholder="E-mail" type="email" />
+
+      <label class="block text-xs text-[color:var(--muted)]">Wachtwoord</label>
+      <input id="regPass" class="w-full bg-[color:var(--bg)]/20 border border-white/5 rounded-lg p-3 placeholder:text-[color:var(--muted)]" placeholder="Wachtwoord" type="password" />
+
+      <div class="mt-2 bg-[color:var(--bg)]/30 rounded-lg p-4 text-center text-sm text-[color:var(--muted)]">
+        <div class="font-semibold mb-2">Talen</div>
+        <div>Nederlands</div>
+        <div>Français</div>
+        <div>Deutsch</div>
+      </div>
+
+      <div class="mt-2">
+        <button id="createAccountBtn" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold">Account aanmaken</button>
+      </div>
+    </main>
+
+    <footer class="px-6 py-6 border-t border-white/5 text-center">
+      <div class="text-sm text-[color:var(--muted)]">Ik heb al een account → <button onclick="location.href='login.html'" class="text-blue-500">Login</button></div>
+      <footer class="text-center text-gray-500 py-6">
+      <p><button onclick="location.href='../index.html'" class="text-sm text-[color:var(--muted)]">Home</button></p>
+  © 2025 — Sidra Mashta — PRT1 — 1GDM2
+ <p><a
+  href="https://github.com/SidraMashta/SidraM_OntwerpdocumentatieTailwind"
+  target="_blank"
+  class="text-center text-gray-500 py-6""
+>
+  Bekijk mijn GitHub repository
+</a>
+</p> 
+</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Zoek treinverbinding</title>
+  <link rel="stylesheet" href="../dist/output.css">
+  <style>:root{--bg:#171B2A; --card:#1F2435; --muted:#D7D9E0}</style>
+</head>
+<body class="bg-[color:var(--bg)] min-h-screen flex items-center justify-center p-4 text-white">
+  <div class="w-full max-w-[390px] h-[820px] bg-[color:var(--card)] rounded-2xl shadow-xl overflow-auto">
+    <header class="px-6 pt-6 pb-4">
+      <div class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold">Zoek treinverbinding</h1>
+        <button onclick="location.href='week8.html'" class="text-sm text-[color:var(--muted)]">Terug</button>
+      </div>
+    </header>
+
+    <main class="px-6 py-4 space-y-4">
+      <input placeholder="Vertrekstation" class="w-full bg-[color:var(--bg)]/20 border border-white/5 rounded-lg p-3" />
+      <input placeholder="Aankomststation" class="w-full bg-[color:var(--bg)]/20 border border-white/5 rounded-lg p-3" />
+      <input placeholder="Datum" class="w-full bg-[color:var(--bg)]/20 border border-white/5 rounded-lg p-3" />
+      <input placeholder="Tijd" class="w-full bg-[color:var(--bg)]/20 border border-white/5 rounded-lg p-3" />
+      <div class="pt-2">
+        <div class="text-sm text-[color:var(--muted)] mb-2">Filters</div>
+        <label class="flex items-center gap-3 text-sm"><input type="checkbox" class="h-4 w-4"/><span>Toon alleen IC</span></label>
+        <label class="flex items-center gap-3 text-sm mt-1"><input type="checkbox" class="h-4 w-4"/><span>Toon vertraagde treinen</span></label>
+        <label class="flex items-center gap-3 text-sm mt-1"><input type="checkbox" class="h-4 w-4"/><span>Toon perroninfo</span></label>
+      </div>
+
+      <button class="w-full bg-blue-600 py-3 rounded-lg">Zoeken</button>
+
+      <div class="mt-6 text-sm text-[color:var(--muted)]">
+        <div class="font-semibold">IC1500 - Gent</div>
+        <div>Vertrek 12:20 — Status: Op tijd</div>
+      </div>
+    </main>
+    <footer class="text-center text-gray-500 py-6">
+      <p><button onclick="location.href='../index.html'" class="text-sm text-[color:var(--muted)]">Home</button></p>
+  © 2025 — Sidra Mashta — PRT1 — 1GDM2
+ <p><a
+  href="https://github.com/SidraMashta/SidraM_OntwerpdocumentatieTailwind"
+  target="_blank"
+  class="text-center text-gray-500 py-6""
+>
+  Bekijk mijn GitHub repository
+</a>
+</p> 
+</footer>
+  </div>
+</body>
+</html>
